@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 240 33% 14%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 240 33% 14%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 33% 14%;
+    
+    --primary: 213 69% 15%;
+    --primary-foreground: 40 33% 96%;
+    
+    --secondary: 179 78% 27%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 40 20% 92%;
+    --muted-foreground: 218 13% 35%;
+    
+    --accent: 39 60% 58%;
+    --accent-foreground: 213 69% 15%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 179 78% 27%;
+    
+    --radius: 0.75rem;
+    
+    --sidebar-background: 213 69% 15%;
+    --sidebar-foreground: 40 33% 96%;
+    --sidebar-primary: 179 78% 27%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 213 60% 22%;
+    --sidebar-accent-foreground: 40 33% 96%;
+    --sidebar-border: 213 50% 25%;
+    --sidebar-ring: 179 78% 27%;
+
+    --ocean: 213 69% 15%;
+    --teal: 179 78% 27%;
+    --sand: 39 60% 58%;
+    --cream: 40 33% 93%;
+    --text-body: 218 13% 35%;
+
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .dark {
+    --background: 213 69% 8%;
+    --foreground: 40 33% 96%;
+    --card: 213 60% 12%;
+    --card-foreground: 40 33% 96%;
+    --popover: 213 60% 12%;
+    --popover-foreground: 40 33% 96%;
+    --primary: 179 78% 40%;
+    --primary-foreground: 213 69% 8%;
+    --secondary: 213 50% 25%;
+    --secondary-foreground: 40 33% 96%;
+    --muted: 213 40% 18%;
+    --muted-foreground: 40 15% 65%;
+    --accent: 39 60% 58%;
+    --accent-foreground: 213 69% 8%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 213 40% 20%;
+    --input: 213 40% 20%;
+    --ring: 179 78% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
